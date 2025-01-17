@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "WebAssign Keypress Submit",
+	"version": "0.1.0",
+	"description": "Press enter in text fields to submit WebAssign questions",
+	"permissions": [
+	  "activeTab"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://www.webassign.net/web/Student/Assignment-Responses/*"],
+			"js": ["script.js"]
+		}
+	]
+  }

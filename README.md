@@ -1,5 +1,3 @@
-Quality of life improvements to our beloved practice problem website
-
 If you ran into a bug, [open an issue](https://github.com/Yarnacle/WebAssign-Keypress-Submit/issues)
 
 ## TODO

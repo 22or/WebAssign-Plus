@@ -1,8 +1,11 @@
 {
 	"manifest_version": 3,
-	"name": "WebAssign Keypress Submit",
+	"name": "WebAssign Plus",
 	"version": "0.1.0",
-	"description": "Press enter in text fields to submit WebAssign questions",
+	"description": "Quality of life improvements to our beloved practice problem website",
+	"icons": {
+		"128": "icon.png"
+	},
 	"permissions": [
 	  "activeTab"
 	],

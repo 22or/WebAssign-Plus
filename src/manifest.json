@@ -10,7 +10,9 @@
 	"content_scripts": [
 		{
 			"matches": ["*://www.webassign.net/web/Student/Assignment-Responses/*"],
-			"js": ["script.js"]
+			"js": ["script.js"],
+			"world": "MAIN",
+			"run_at": "document_start"
 		}
 	]
   }

@@ -15,8 +15,6 @@ HTMLElement.prototype.scrollIntoView = () => {
 	console.debug('Scroll blocked');
 };
 
-
-
 // focus setup
 const originalFocus = HTMLElement.prototype.focus;
 HTMLElement.prototype.focus = () => {

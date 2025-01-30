@@ -1,0 +1,4 @@
+/* disable tooltips */
+.tooltip {
+	display: none !important;
+}

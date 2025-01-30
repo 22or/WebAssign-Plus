@@ -11,6 +11,7 @@
 		{
 			"matches": ["*://www.webassign.net/web/Student/Assignment-Responses/*"],
 			"js": ["script.js"],
+			"css": ["style.css"],
 			"world": "MAIN",
 			"run_at": "document_start"
 		}

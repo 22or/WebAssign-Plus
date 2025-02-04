@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "WebAssign Plus",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"description": "Quality of life improvements to our beloved practice problem website",
 	"icons": {
 		"128": "icon.png"

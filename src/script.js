@@ -37,9 +37,23 @@ function focusNextQuestion() {
 	if (i == -1) {
 		return;
 	}
-	const id = url.substring(i + 1);
-	const questionDiv = document.querySelector(`div[wa-qa="${id}_container"]`);
-	const inputFields = questionDiv.querySelectorAll('input[type="text"]');
+	let inputFields;
+	try {
+		const id = url.substring(i + 1);
+		let questionDiv;
+		if (id.charAt(0) == 'Q' && !isNaN(Number(id.substring(1)))) {
+			questionDiv = document.getElementById(id).nextElementSibling;
+		}
+		else {
+			questionDiv = document.querySelector(`div[wa-qa="${id}_container"]`);
+		}
+		inputFields = questionDiv.querySelectorAll('input[type="text"]');
+	}
+	catch {
+		console.log('Failed to focus question; this is not necessarily a problem');
+		return;
+	}
+
 	let focused = false;
 	for (const inputField of inputFields) {
 		const mark = document.getElementById(`${inputField.name}_mark`);
@@ -95,9 +109,6 @@ function setUpAnswerPreviews() {
 	for (const previewButton of previewButtons) {
 		const inputField = previewButton.previousElementSibling.getElementsByTagName('input')[0];
 		if (!inputField) {
-			continue;
-		}
-		if (!inputField.value) {
 			continue;
 		}
 		const questionId = inputField.getAttribute('name');

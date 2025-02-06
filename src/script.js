@@ -34,13 +34,13 @@ function focus(elem) {
 function focusNextQuestion() {
 	const url = window.location.href;
 	const i = url.indexOf('#');
+	let questionDiv;
 	if (i == -1) {
 		return;
 	}
 	let inputFields;
 	try {
 		const id = url.substring(i + 1);
-		let questionDiv;
 		if (id.charAt(0) == 'Q' && !isNaN(Number(id.substring(1)))) {
 			questionDiv = document.getElementById(id).nextElementSibling;
 		}

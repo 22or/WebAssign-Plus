@@ -1,12 +1,19 @@
 {
 	"manifest_version": 3,
 	"name": "WebAssign Plus",
-	"version": "0.2.3",
+	"version": "0.2.4",
 	"description": "Quality of life improvements to our beloved practice problem website",
-	"icons": {
-		"128": "icon.png"
+	"action": {
+		"default_icon": {
+			"128": "icon.png"
+		}
 	},
-	"permissions": [],
+	"permissions": [
+		"storage"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
 	"content_scripts": [
 		{
 			"matches": ["*://www.webassign.net/web/Student/Assignment-Responses/*"],
@@ -14,6 +21,12 @@
 			"css": ["style.css"],
 			"world": "MAIN",
 			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://www.webassign.net/web/Student/Assignment-Responses/*"],
+			"js": ["chrome-api-proxy.js"],
+			"run_at": "document_start",
+			"world": "ISOLATED"
 		}
 	]
-  }
+}

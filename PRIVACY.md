@@ -1,3 +1,3 @@
-No personal data will ever be collected, stored, sent, or otherwise used in any way whatsoever.
+No personal data will ever be collected or otherwise used in any way whatsoever. Webassign Plus stores only its enabled/disabled state.
 
-All functionality is limited to the client interface. I have no interest in knowing anything about you at all.
+I have no interest in knowing anything about you at all.

@@ -5,6 +5,9 @@ A Chrome extension that adds quality-of-life improvements to WebAssign, making h
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/gmiippgkfccnjehdgnnphfhedfeopomo)](https://chromewebstore.google.com/detail/webassign-plus/gmiippgkfccnjehdgnnphfhedfeopomo)
 [![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/gmiippgkfccnjehdgnnphfhedfeopomo)](https://chromewebstore.google.com/detail/webassign-plus/gmiippgkfccnjehdgnnphfhedfeopomo)
 
+<img width="640" height="400" alt="image" src="https://github.com/user-attachments/assets/2c87622c-8d8f-473e-8999-f81a129c0a8e" />
+
+
 ## Overview
 
 WebAssign Plus enhances the WebAssign experience by improving the interface so you can focus on problem-solving. Say goodbye to repetitive clicking and awkward preview windows!
